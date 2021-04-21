@@ -29,7 +29,7 @@ class _RachmanState extends State<Rachman> {
           body: Container(
             child: SafeArea(
               child: new WebView(
-                  initialUrl: "https://portfolio.rachman.dev",
+                  initialUrl: 'https://portfolio.rachman.dev',
                   javascriptMode: JavascriptMode.unrestricted,
                   onWebViewCreated: (WebViewController wc) {
                     controller = wc;
