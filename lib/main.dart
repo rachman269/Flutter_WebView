@@ -1,33 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/platform_interface.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 void main() {
   runApp(Rachman());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: SafeArea(
-          child: new WebView(
-            initialUrl: "https://portfolio.rachman.dev",
-            javascriptMode: JavascriptMode.unrestricted,
-            // onPageFinished: (String url) {
-            //   print("Page Finished Loading");
-            // },
-            // onWebResourceError: (WebResourceError error) {
-            //   print("error");
-            // },
-          ),
-        ),
-      ),
-      title: "Portfolio Rachman",
-      debugShowCheckedModeBanner: false,
-    );
-  }
 }
 
 class Rachman extends StatefulWidget {
